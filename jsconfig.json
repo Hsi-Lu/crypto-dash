@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        /* Target & Runtime Environment */
+        "target": "ES2022", /* Compiles to highly optimized modern JS */
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ES2022"
+        ], /* Standard library definitions for browser apps */
+        "jsx": "react-jsx", /* Modern automatic JSX runtime for React 19 */
+        /* Module Resolution Strategy */
+        "module": "ESNext", /* Generates standard modern ES modules */
+        "moduleResolution": "bundler", /* Standard for Vite, Next.js, Webpack, etc. */
+        "allowImportingTsExtensions": true, /* Allows importing .ts/.tsx extensions directly */
+        "resolveJsonModule": true, /* Allows importing .json configuration files */
+        "isolatedModules": true, /* Required for fast frontend bundlers */
+        "noEmit": true, /* Lets your bundler emit JS files, TS only type-checks */
+        /* Strict Type-Checking Guardrails */
+        "strict": true, /* Activates all strict type-checking features */
+        "noUnusedLocals": true, /* Flags declared but unused variables */
+        "noUnusedParameters": true, /* Flags unused function parameters */
+        "noFallthroughCasesInSwitch": true, /* Prevents bugs caused by missing switch case breaks */
+        "skipLibCheck": true, /* Skips checking types inside node_modules for speed */
+        /* Interop Constraints */
+        "esModuleInterop": true, /* Easier imports from non-ESM commonjs libraries */
+        "allowSyntheticDefaultImports": true /* Allows default imports from modules without defaults */
+    },
+    "include": [
+        "src"
+    ], /* Focuses type-checking exclusively on app source */
+    "exclude": [
+        "node_modules",
+        "dist",
+        "build"
+    ] /* Prevents scanning generated assets */
+}
